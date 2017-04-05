@@ -1,0 +1,19 @@
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.9'
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "io.realm:realm-gradle-plugin:2.0.2"
+        classpath 'com.android.tools.build:gradle:2.2.0'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
